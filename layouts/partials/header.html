@@ -1,0 +1,32 @@
+<header class="page-header <%= current_page.data.main_header_class %>">
+  <div class="container">
+    <h1>
+      <a href="{{ .Site.BaseURL }}">
+        <img class="logo" src="http://www.otwarteklatki.pl/wp-content/themes/otwarteklatki/assets/img/logo.svg" alt="Otwarte Klatki"/>
+      </a>
+    </h1>
+
+    <button type="button" class="menu-switcher">
+      <svg class="icon icon-hamburger">
+        <use xlink:href="http://www.otwarteklatki.pl/wp-content/themes/otwarteklatki/assets/img/sprites/all.svg#hamburger"></use>
+      </svg>
+      <svg class="icon icon-x">
+        <use xlink:href="http://www.otwarteklatki.pl/wp-content/themes/otwarteklatki/assets/img/sprites/all.svg#x"></use>
+      </svg>
+    </button>
+    <nav role="navigation" class="main-nav">
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li id="menu-item-8997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8997"><a href="{{.URL}}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<a href="http://www.otwarteklatki.pl/przekaz-darowizne/" class="donation-fixed">
+  <svg class="icon icon-heart">
+      <use xlink:href="http://www.otwarteklatki.pl/wp-content/themes/otwarteklatki/assets/img/sprites/all.svg#heart"></use>
+  </svg>
+  Przekaż darowiznę
+</a>

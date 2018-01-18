@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl-PL" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="icon" href="http://www.otwarteklatki.pl/wp-content/themes/otwarteklatki/assets/img/favicon.png">
+
+
+    <!-- This site is optimized with the Yoast SEO plugin v6.1.1 - https://yoa.st/1yg?utm_content=6.1.1 -->
+    <meta name="description" content="Otwarte Klatki to organizacja pożytku publicznego (OPP) walcząca z okrucieństwem wobec zwierząt. Edukuje i promuje pozytywne postawy w społeczeństwie"/>
+    <link rel="canonical" href="http://www.otwarteklatki.pl/" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Otwarte Klatki - Twórz z nami świat wolny od cierpienia zwierząt" />
+    <meta property="og:description" content="Otwarte Klatki to organizacja pożytku publicznego (OPP) walcząca z okrucieństwem wobec zwierząt. Edukuje i promuje pozytywne postawy w społeczeństwie" />
+    <meta property="og:url" content="http://www.otwarteklatki.pl/" />
+    <meta property="og:site_name" content="Otwarte Klatki" />
+    <meta property="og:image" content="http://www.otwarteklatki.pl/wp-content/uploads/2016/06/fb-make-a-change.jpg" />
+    <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.otwarteklatki.pl\/","name":"Otwarte Klatki","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.otwarteklatki.pl\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Otwarte Klatki &raquo; Kanał z wpisami" href="http://www.otwarteklatki.pl/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Otwarte Klatki &raquo; Kanał z komentarzami" href="http://www.otwarteklatki.pl/comments/feed/" />
+
+    <title>{{ .Title }}</title>
+
+    <link rel='stylesheet' id='stylesheet-css'  href='http://www.otwarteklatki.pl/wp-content/themes/otwarteklatki/assets/css/main.css?88' type='text/css' media='all' />
+    <script type='text/javascript' src='http://www.otwarteklatki.pl/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js'></script>
+  </head>
+
+  <body class="home page-template page-template-pages page-template-page-home page-template-pagespage-home-php page page-id-9014 <%= current_page.data.body_class %>">
+    {{ partial "header.html" . }}
+
+    <div class="page-wrap">
+      <main role="main" class="page-content">
+        {{ .Content }}
+      </main>
+
+      {{ partial "footer.html" . }}
+    </div>
+
+    {{ partial "ghost_footer.html" . }}
+  </body>
+</html>

@@ -1,0 +1,14 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Otwarte Klatki"
+
+[[menu.main]]
+    name = "O nas"
+    weight = -110
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "Kampane"
+    weight = -100
+    identifier = "campaigns"
+    url = "/campaigns/"
